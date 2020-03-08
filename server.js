@@ -25,7 +25,7 @@ app.use(express.json());
 //Step 4: Implement the route files that will be used throught the code 
 //require the files from the routing folder
 //
-//require("./app/routing/apiRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 //require("./app/routing/htmlRoutes")(app);
 
 //Step 5: Execute teh server (Listener)
