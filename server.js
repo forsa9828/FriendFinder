@@ -31,6 +31,11 @@ app.use(express.json());
 //Step 5: Execute teh server (Listener)
 //call express to lisen on port 3000 and run the server 
 //once connection was successful, console.log
+
+//app.listen(PORT, function)
+//express utilize your function, listen, to run the server on, port 3000;
+//after complete the following funciton 
+
 app.listen(PORT, function(){
     console.log("Server has begun on port " + PORT)
 })
