@@ -1,0 +1,36 @@
+//Require all depen
+//var Require = ("require");
+
+//Step 1: Require
+//Express 
+var express = require('express');
+
+//Step 2:
+//Hold the express function 
+var app = express();
+
+//Pick a port 
+var PORT = process.env.PORT || 3000;
+
+
+//Step 3: Specify data format 
+//urlencoded for express translate the incoming Request Object as strings or arrays.
+app.use(express.urlencoded({extended: true}));
+//The incoming data will be displayed in JSON format 
+app.use(express.json());
+
+
+
+
+//Step 4: Implement the route files that will be used throught the code 
+//require the files from the routing folder
+//
+//require("./app/routing/apiRoutes")(app);
+//require("./app/routing/htmlRoutes")(app);
+
+//Step 5: Execute teh server (Listener)
+//call express to lisen on port 3000 and run the server 
+//once connection was successful, console.log
+app.listen(PORT, function(){
+    console.log("Server has begun on port " + PORT)
+})
