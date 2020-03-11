@@ -52,7 +52,7 @@ module.exports = function(app) {
         res.json(bestMatch);
     });
             
-
-
-
 }
+
+//Export for use in main server.js file
+module.exports = apiRoutes;
