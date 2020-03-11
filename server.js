@@ -4,6 +4,8 @@
 //Step 1: Require
 //Express 
 var express = require('express');
+//path
+//var path = require("path");
 
 //Step 2:
 //Hold the express function 
@@ -11,7 +13,8 @@ var app = express();
 
 //Pick a port 
 var PORT = process.env.PORT || 3000;
-
+//set up express app
+//var app = express();
 
 //Step 3: Specify data format 
 //urlencoded for express translate the incoming Request Object as strings or arrays.
